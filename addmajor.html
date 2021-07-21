@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+<script>
+	function checkYxzy(){
+		var uname = document.getElementById("Yxzy").value;
+		var unameTip = document.getElementById("yxzyTip")
+		var reg=/^[\u4e00-\u9fa5]{2,15}$/;
+		if(!reg.test(uname)){
+			unameTip.innerHTML="名称不合法!";
+			unameTip.style="color:red";
+		}
+		else{
+			unameTip.innerHTML="";
+		}
+		
+	}
+	
+</script>
+</head>
+
+<body>
+
+    
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">添加专业</a></li>
+    </ul>
+    </div>
+    
+    <div class="rightinfo">
+
+			<table class="tablelist">
+				<thead>
+					<tr>
+						<th><input name="" type="checkbox" value="" checked="checked" /></th>
+						<th>学院名<i class="sort"><img src="images/px.gif" /></i></th>
+						<th>系名</th>
+						<th>院系代号</th>
+						<th>备注</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						
+						<td>软件学院</td>
+						<td>软件工程</td>
+						<td>21</td>
+						<td>备注</td>
+						<td>
+							<a href="#" class="tablelink">查看</a>
+							<a href="#" class="tablelink">选定</a>
+						</td>
+					</tr>
+                    <tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						
+						<td>大数据学院</td>
+						<td>人工智能</td>
+						<td>22</td>
+						<td>备注</td>
+						<td>
+							<a href="#" class="tablelink">查看</a>
+							<a href="#" class="tablelink">选定</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						<td>理学院</td>
+						<td>物理系</td>
+						<td>23</td>
+						<td>备注</td>
+						<td>
+							<a href="#" class="tablelink">查看</a>
+							<a href="#" class="tablelink">选定</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						
+						<td>理学院</td>
+						<td>数学系</td>
+						<td>24</td>
+						<td>备注</td>
+						<td>
+							<a href="#" class="tablelink">查看</a>
+							<a href="#" class="tablelink">选定</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input name="" type="checkbox" value="" /></td>
+						<td>人文学院</td>
+						<td>马克思主义哲学</td>
+						<td>25</td>
+						<td>备注</td>
+						<td>
+							<a href="#" class="tablelink">查看</a>
+							<a href="#" class="tablelink">选定</a>
+						</td>
+					</tr>
+					
+
+				</tbody>
+			</table>
+
+			<div class="pagin">
+				<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+				<ul class="paginList">
+					<li class="paginItem">
+						<a href="javascript:;"><span class="pagepre"></span></a>
+					</li>
+					<li class="paginItem">
+						<a href="javascript:;">1</a>
+					</li>
+					<li class="paginItem current">
+						<a href="javascript:;">2</a>
+					</li>
+					<li class="paginItem">
+						<a href="javascript:;">3</a>
+					</li>
+					<li class="paginItem">
+						<a href="javascript:;">4</a>
+					</li>
+					<li class="paginItem">
+						<a href="javascript:;">5</a>
+					</li>
+					<li class="paginItem more">
+						<a href="javascript:;">...</a>
+					</li>
+					<li class="paginItem">
+						<a href="javascript:;">10</a>
+					</li>
+					<li class="paginItem">
+						<a href="javascript:;"><span class="pagenxt"></span></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tip">
+				<div class="tiptop"><span>提示信息</span>
+					<a></a>
+				</div>
+
+				<div class="tipinfo">
+					<span><img src="images/ticon.png" /></span>
+					<div class="tipright">
+						<p>是否确认对信息的选定 ？</p>
+						<cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+					</div>
+				</div>
+
+				<div class="tipbtn">
+					<input name="" type="button" class="sure" value="确定" />&nbsp;
+					<input name="" type="button" class="cancel" value="取消" />
+				</div>
+
+			</div>
+
+		</div>
+		
+    <div class="formbody">
+    
+  	<div id="tab1" class="tabson">    
+    <ul class="forminfo">
+    <li>
+      <label>该院系专业名称<b>*</b></label>
+      <input id="Yxzy" onblur="checkYxzy()" placeholder="字母数字组合,字母开头,3-15个字符" name="classid" type="text" class="dfinput"    style="width:345px;"/>
+      <i id="yxzyTip"></i>
+    </li>
+	 
+    <li><label>备注<b>*</b></label>
+    
+
+    <textarea id="content7" name="content" style="width:700px;height:250px;visibility:hidden;"></textarea>
+    </li>
+    <li><label>&nbsp;</label><input name="" type="button" class="btn" value="保存专业"/></li>
+    </ul>
+    
+    </div> 
+    </div>
+</body>
+
+</html>
